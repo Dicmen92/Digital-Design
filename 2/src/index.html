@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form class="form" action="#">
+      <h2 class="form-header form-header__indent">Регистрация</h2>
+      <div class="form-rect form-rect__1"></div>
+      <label class="form-label form-label__indent" for="email">E-mail</label>
+      <input
+        class="form-input form-input__indent"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@site.domain"
+        required
+      />
+
+      <div class="form-password">
+        <div class="form-password__left">
+          <label class="form-label form-label__indent" for="password-1"
+            >Пароль</label
+          >
+          <input
+            class="form-input form-input__indent form-input__password"
+            type="password"
+            id="password-1"
+            name="password-1"
+            placeholder="password"
+            required
+          />
+        </div>
+        <div class="form-password__right">
+          <label class="form-label form-label__indent" for="password-2"
+            >Повторите пароль</label
+          >
+          <input
+            class="form-input form-input__indent form-input__password"
+            type="password"
+            id="password-2"
+            name="password-2"
+            placeholder="password"
+            required
+          />
+        </div>
+      </div>
+
+      <label class="form-label form-label__indent" for="FIO">ФИО</label>
+      <input
+        class="form-input form-input__indent"
+        type="text"
+        id="FIO"
+        name="FIO"
+        placeholder="Игорев Игорь Игоревич"
+        required
+      />
+
+      <label class="form-label form-label__indent" for="age">Возраст</label>
+      <input
+        class="form-input form-input__indent"
+        type="number"
+        id="age"
+        name="age"
+        placeholder="18"
+        min="1"
+        max="130"
+        required
+      />
+
+      <div class="form-rect form-rect__2"></div>
+
+      <div class="form-footer">
+        <input
+          type="submit"
+          class="form-button form-button__send"
+          value="Отправить"
+        />
+        <button class="form-button form-button__cancel">Отмена</button>
+      </div>
+    </form>
+  </body>
+</html>
